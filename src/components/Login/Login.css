@@ -1,0 +1,56 @@
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input.focus{
+    border: none;
+}
+.login{
+    background-color: rgba(17, 17, 17, 0.938);
+    margin-top: 30px;
+    padding: 20px 50px;
+}
+.email{
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1.6px solid rgb(40, 169, 212);
+    padding: 5px 20px;
+    width: 100%;
+}
+form input{
+    border-radius: 2px;
+}
+.password{
+    margin-bottom: 19px;
+    border: none;
+    border-bottom: 1.5px solid rgb(40, 169, 212);
+    padding: 5px 20px;
+    width: 100%;
+}
+.submit-button{
+    font-weight: 500;
+}
+.create-account{
+    text-decoration: none;
+    font-weight: 600;
+}
+.social-icon{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.social-icon .google{
+    cursor: pointer;
+    color: rgb(218, 81, 63);
+}
+.social-icon .github{
+    margin-left: 20px;
+    cursor: pointer;
+    color: rgb(170, 170, 170);
+}
+.social-icon .facebook{
+    margin-left: 20px;
+    cursor: pointer;
+    color: #4867AA;
+}
