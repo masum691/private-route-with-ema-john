@@ -1,10 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import { useHistory, useLocation } from 'react-router';
 import "./Login.css"
 
 const Login = () => {
     const { handleGit, signInUsingGoogle } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/shop';
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+        .then(result => {
+            history.push(redirect_uri)
+        })
+    }
+    const handleGitSignIn = () => {
+        handleGit()
+        .then(result => {
+            history.push(redirect_uri)
+        })
+    }
 
     return (
 
@@ -23,8 +40,8 @@ const Login = () => {
                 <div className="mb-3 mt-4 text-light">---------- Or sign in with ------------</div>
                 {/* <button onClick={signInUsingGoogle} className="mb-4 btn btn-danger btn-sm">Google Sign In</button> */}
                 <div className="social-icon">
-                    <i onClick={signInUsingGoogle} class="fab fa-google google"></i>
-                    <i onClick={handleGit} class="fab fa-github github"></i>
+                    <i onClick={handleGoogleLogin} class="fab fa-google google"></i>
+                    <i onClick={handleGitSignIn} class="fab fa-github github"></i>
                     <i class="fab fa-facebook facebook"></i>
                 </div>
             </div>

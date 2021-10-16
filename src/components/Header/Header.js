@@ -15,9 +15,9 @@ const Header = () => {
                 <NavLink to="/review">Order Review</NavLink>
                 <NavLink to="/inventory">Manage Inventory</NavLink>
                 <span className="text-light ms-5 me-2">{user.displayName}</span>
-                <img className="user-photo" src={user.photoURL} alt="" />
+                <img title={user.displayName} className="user-photo" src={user.photoURL} alt="" />
                 {
-                    user.email ?
+                    user.displayName ?
                     <button onClick={logOut} className="btn btn-warning btn-sm fw-normal" >Log Out</button>
                     :
                     <NavLink to="/sign-in">Log In</NavLink>

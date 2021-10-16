@@ -11,18 +11,11 @@ const useFirebase = () => {
 
 
     const signInUsingGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                const user = result.user;
-            })
+        return signInWithPopup(auth, googleProvider);
     }
 
     const handleGit = () => {
-        signInWithPopup(auth, gitProvider)
-        .then(res => {
-            const user = res.user;
-            setUser(user)
-        })
+        return signInWithPopup(auth, gitProvider)
     }
     const logOut = () => {
         signOut(auth)
