@@ -30,5 +30,13 @@ Step-3:
 2. setup sign out method
 3. user state
 4. special observer
+5. return necessary methods states from useFirebase
+
+-----------------------
+Step - 4:
+1. create a auth context 
+2. create context provider
+3. use auth provider
+4. create useAuth Hook
 
 */

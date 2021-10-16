@@ -4,22 +4,22 @@ import './Register.css'
 
 const Register = () => {
     return (
-        <div className="login-form">
-            <div className="login shadow-lg rounded">
+        <div className="register-form">
+            <div className="register shadow-lg rounded">
                 <h3 className="mt-1 text-light mb-4">Create account</h3>
                 <hr className="text-light mb-2" />
                 <form onSubmit="">
                     <label className="text-light" htmlFor="name">Your Name</label>
                     <br />
-                    <input type="text" className="name w-100" />
+                    <input type="text" className="reg-name w-100" />
                     <br />
                     <label className="text-light" htmlFor="email">Email</label>
                     <br />
-                    <input className="email" type="email" />
+                    <input className="reg-email w-100" type="email" />
                     <br />
                     <label className="text-light" htmlFor="password">Password</label>
                     <br />
-                    <input className="password" type="password" placeholder="At least 6 charecters" />
+                    <input className="reg-password w-100" type="password" placeholder="At least 6 charecters" />
 
                     <div className="text-light mb-3 info">
                     <i className="fas fa-info-circle me-2"></i>

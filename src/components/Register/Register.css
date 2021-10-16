@@ -1,4 +1,4 @@
-.login-form{
+.register-form{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,18 +6,18 @@
 form input.focus{
     border: none;
 }
-.login{
+.register{
     background-color: rgba(0, 0, 0, 0.911);
     margin-top: 30px;
     padding: 20px 60px;
 }
-.email{
+.reg-email{
     margin-bottom: 10px;
     border: none;
     border-bottom: 1.6px solid rgb(40, 169, 212);
     padding: 5px 20px;
 }
-.name{
+.reg-name{
     margin-bottom: 10px;
     border: none;
     border-bottom: 1.6px solid rgb(40, 169, 212);
@@ -26,7 +26,7 @@ form input.focus{
 form input{
     border-radius: 2px;
 }
-.password{
+.reg-password{
     margin-bottom: 19px;
     border: none;
     border-bottom: 1.5px solid rgb(40, 169, 212);
